@@ -1,0 +1,18 @@
+#2.	Una función recursiva que retorne la cantidad de ‘a’ que hay en una cadena de caracteres. 
+def ContarCadena(cadena):
+    if len(cadena) == 0:
+        return ""
+    
+cadena = input ("Ingrese un Texto: ")
+
+
+contador = 0
+vocales = "aeiouAEIOU"
+
+contador += sum(1 for char in cadena if char in vocales)
+
+#for letra in Cadena:
+#    if letra in vocales:
+#       Contar += 1
+
+print(f"El total de vocales es: {contador}")
