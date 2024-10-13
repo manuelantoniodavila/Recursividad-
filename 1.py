@@ -1,11 +1,11 @@
 #1.	Una función recursiva que imprima de forma inversa una cadena de caracteres.  
 
-def ImprimirCadena (cadena):
+def ImprimirLaCadena(cadena):
     if len(cadena) == 0:
         return ""
     else:
-        return cadena [-1] + ImprimirCadena (cadena [:-1])
+        return cadena [-1] + ImprimirLaCadena (cadena [:-1])
     
-dato = input ("Ingrese un Texto: ")
-Cadena_Inversa =ImprimirCadena(dato)
-print("Imprimir Cadena: ", Cadena_Inversa)
+dato = input ("Ingrese Texto ")
+Cadena_Inversa =ImprimirLaCadena(dato)
+print("Imprimir la Cadena: ", Cadena_Inversa)
