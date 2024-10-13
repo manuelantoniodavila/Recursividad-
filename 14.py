@@ -1,18 +1,15 @@
-#Se tiene un arreglo de N  cadenas de caracteres, 
-# realice una función recursiva que imprima las 
-# cadenas de caracteres que su longitud sea menor a 5
 
-def LlenarLista (lista, n, i= 0):
+def LlenarLaLista (lista, n, i= 0):
     if (n==i):
         return
     else:
     
-        dato = (input("Ingrese un texto: "))
+        dato = (input("Ingrese un texto "))
         lista.append(dato)
-        LlenarLista(lista, n, i + 1)
+        LlenarLaLista(lista, n, i + 1)
     
     
-def ImprimirMenores(lista, i=0):
+def ImprimirLosMenores(lista, i=0):
     if i >= len(lista):
         return
         
@@ -20,16 +17,16 @@ def ImprimirMenores(lista, i=0):
         print(lista[i])   
         
         
-    ImprimirMenores(lista, i + 1)
+    ImprimirLosMenores(lista, i + 1)
 
         
-n = int(input("Ingrese la cantidad de cadena a llenar: "))
+n = int(input("Ingrese la cantidad de cadena a llenar "))
 
 lista = []
-LlenarLista(lista, n )
+LlenarLaLista(lista, n )
 
 
 
-print(f"Cadena de caracteres en su longitud menor de 5: ")
+print(f"Cadena de caracteres en su longitud menor de 5 son ")
 
-Imprimir = ImprimirMenores(lista)
+Imprimir = ImprimirLosMenores(lista)
