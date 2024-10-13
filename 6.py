@@ -12,12 +12,12 @@ def UnaPalabra(frase, i):
         
 #Ejecucion principal del programa
 
-frase= input("Ingresse la frase para saber si es una palabra o frase: ")
+frase= input("Ingresse la frase para saber si contien una palabra o frase")
 
 #Ejecucion de funcion  recursiva
 band = UnaPalabra (frase, 0)
 
 if (band):
-    print("Es una palabra")
+    print("Se a encontrado una palabra")
 else:
-    print("No es una palabra")
+    print("No se encuentra ningúna palabra")
