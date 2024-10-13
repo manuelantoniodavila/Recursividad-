@@ -1,4 +1,4 @@
-#2.	Una función recursiva que retorne la cantidad de ‘a’ que hay en una cadena 
+ 
 def ContarLasCadena(cadena):
     if len(cadena) == 0:
         return ""
