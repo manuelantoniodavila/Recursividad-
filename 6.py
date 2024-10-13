@@ -1,4 +1,3 @@
-#6.	Una función recursiva que retorne true o false si la cadena de caracteres es de una palabra.
 
 def UnaPalabra(frase, i):
     
