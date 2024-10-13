@@ -1,4 +1,4 @@
-#4.	Una función recursiva que retorne cuantas palabras tienen una frase.
+
 def ContarLasPalabras (cadena):
     if len(cadena) == 0:
         return 0
