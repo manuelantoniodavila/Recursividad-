@@ -1,5 +1,5 @@
-#2.	Una función recursiva que retorne la cantidad de ‘a’ que hay en una cadena de caracteres. 
-def ContarCadena(cadena):
+#2.	Una función recursiva que retorne la cantidad de ‘a’ que hay en una cadena 
+def ContarLasCadena(cadena):
     if len(cadena) == 0:
         return ""
     
@@ -15,4 +15,4 @@ contador += sum(1 for char in cadena if char in vocales)
 #    if letra in vocales:
 #       Contar += 1
 
-print(f"El total de vocales es: {contador}")
+print(f"El total de vocales encontradas es {contador}")
