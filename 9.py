@@ -1,14 +1,13 @@
-#9.	Una función recursiva que retorne la suma de los elementos positivos del arreglo.
 
-def LlenarLista (lista, n, i):
+def LlenarLaLista (lista, n, i):
     if (n==i):
-        numero = int(input("Ingrese el numero: "))
+        numero = int(input("Ingrese un numero: "))
         lista.append(numero)
     else:
         LlenarLista
-        numero = int(input("Ingrese el numero: "))
+        numero = int(input("Ingrese un numero: "))
         lista.append(numero)
-        LlenarLista(lista, n, i+1)
+        LlenarLaLista(lista, n, i+1)
         
 def SumaPositivo(lista, i):
     if(len (lista) == i):
@@ -20,8 +19,7 @@ def SumaPositivo(lista, i):
             return 0 + SumaPositivo (lista, i+1)
         
         
-#Ejecucion principal del programa
-n= int (input("Ingresse la cantidad del elemento a llenar: "))
+n= int (input("Ingresse la cantidad del elemento a llenar"))
 
 lista = []
 LlenarLista (lista, n, 1)
